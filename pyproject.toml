@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "predictive_maintenance_lstm"
+version = "0.1.0"
+description = "LSTM based predictive maintenance for IMS Bearing Dataset"
+authors = [
+    {name = "Seyhan Kokcu", email = "seyhankokcu@pm.me"},
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "tensorflow",
+    "scikit-learn",
+    "scipy",
+    "pyarrow",
+    "tqdm"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
